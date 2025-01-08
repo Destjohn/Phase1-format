@@ -1,5 +1,5 @@
 body {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -7,4 +7,14 @@ body {
 button {
   display: block;
   margin: 0 auto;
+}
+
+#game1{
+  margin:  0 auto;
+  width: 50%;
+}
+
+#game2{
+  margin: 0 auto;
+  width: 50%;
 }
