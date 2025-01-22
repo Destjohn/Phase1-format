@@ -64,5 +64,5 @@ const countUp2 = function () {
 
 startBtn2.addEventListener("click", function () {
     startTime = new Date();
-    timer = setInterval(countUp2, 1000);
+    timer2 = setInterval(countUp2, 1000);
 });
