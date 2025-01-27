@@ -22,7 +22,7 @@ setBtn.addEventListener('click',function(){
             }else if ( cpNum === 1 ){
                 log.textContent = '結果：勝ち';
             }else if ( cpNum === 2 ){
-                log,this.textContent = '結果：負け';
+                log.this.textContent = '結果：負け';
             }
             break;
         }
@@ -32,7 +32,7 @@ setBtn.addEventListener('click',function(){
             }else if ( cpNum === 1 ){
                 log.textContent = '結果：引き分け';
             }else if ( cpNum === 2 ){
-                log,this.textContent = '結果：勝ち';
+                log.this.textContent = '結果：勝ち';
             }
             break;
         }
@@ -42,7 +42,7 @@ setBtn.addEventListener('click',function(){
             }else if ( cpNum === 1 ){
                 log.textContent = '結果：負け';
             }else if ( cpNum === 2 ){
-                log,this.textContent = '結果：引き分け';
+                log.this.textContent = '結果：引き分け';
             }
             break;
         }

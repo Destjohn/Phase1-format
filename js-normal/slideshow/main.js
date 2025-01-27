@@ -23,7 +23,7 @@ pushBtn.addEventListener("click",function () {
     imgSection.setAttribute('src', data[imgNum].img);
 });
 
-pushBtn.addEventListener('click',function(){
+skipBtn.addEventListener('click',function(){
     imgNum = document.getElementById('seasonNum').value;
     imgNum = parseInt(imgNum); //ここの意味
     imgSection.setAttribute('src',data[imgNum].img);
