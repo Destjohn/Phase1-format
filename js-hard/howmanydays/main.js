@@ -1,11 +1,18 @@
-var nowTime = moment();
-nowTime.format('YYYY-MM-DD HH:mm:ss');
-console.log(nowTime);
+const timer = document.createElement('p');
+const body = document.querySelector('body');
+body.appendChild(timer);
 
 var goalTime = moment('2112-09-03 00:00:00');
-goalTime.format('YYYY-MM-DD HH:mm:ss');
-console.log(goalTime);
 
-const timer = document.createElement('p');
-timer.innerHTML = `ドラえもんが生まれるまであと${goalTime.diff(nowTime,'d')}日${goalTime.diff(nowTime,'h')}時間${goalTime.diff(nowTime,'m')}分${goalTime.diff(nowTime,'s')}秒`;
-console.log(`ドラえもんが生まれるまであと${goalTime.diff(nowTime,'d')}日${goalTime.diff(nowTime,'h')}時間${goalTime.diff(nowTime,'m')}分${goalTime.diff(nowTime,'s')}秒`);
+const limit = function(){
+    var nowTime = moment();
+    const days = goalTime.diff(nowTime,'days');
+    const hours = goalTime.diff(nowTime,'hour') % 24; 
+    const minutes = goalTime.diff(nowTime,'minute') % 60;
+    const seconds = goalTime.diff(nowTime,'second') % 60;
+    timer.innerHTML = `ドラえもんが生まれるまであと${days}日${hours}時間${minutes}分${seconds}秒`;
+};
+
+limit();
+
+setInterval(limit,1000);
