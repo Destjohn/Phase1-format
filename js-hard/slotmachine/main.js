@@ -47,52 +47,52 @@ startBtn.addEventListener('click',function(){
         x = x+1;
         a = a+1;
         d = d+1;
+        if ( x === 10 ){
+            x = 0;
+        }
+        if ( a === 10 ){
+            a = 0;
+        }
+        if ( d === 10 ){
+            d = 0;
+        }
         number.textContent = x;
         number4.textContent = a;
         number7.textContent = d;
-        if ( x === 9 ){
-            x = -1;
-        };
-        if ( a === 9 ){
-            a = -1;
-        };
-        if ( d === 9 ){
-            d = -1;
-        };
     },100);
     random2 = setInterval(function(){
         y = y+1;
         b = b+1;
         e = e+1;
+        if ( y === 10 ){
+            y = 0;
+        }
+        if ( b === 10 ){
+            b = 0;
+        }
+        if ( e === 10 ){
+            e = 0;
+        }
         number2.textContent = y;
         number5.textContent = b;
         number8.textContent = e;
-        if ( y === 9 ){
-            y = -1;
-        };
-        if ( b === 9 ){
-            b = -1;
-        };
-        if ( e === 9 ){
-            e = -1;
-        };
     },100);
     random3 = setInterval(function(){
         z = z+1;
         c = c+1;
         f = f+1;
+        if ( z === 10 ){
+            z = 0;
+        }
+        if ( c === 10 ){
+            c = 0;
+        }
+        if ( f === 10 ){
+            f = 0;
+        }
         number3.textContent = z;
         number6.textContent = c;
         number9.textContent = f;
-        if ( z === 9 ){
-            z = -1;
-        };
-        if ( c === 9 ){
-            c = -1;
-        };
-        if ( f === 9 ){
-            f = -1;
-        };
     },100);
 });
 
