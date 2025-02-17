@@ -2,11 +2,11 @@ const timer = document.createElement('p');
 const body = document.querySelector('body');
 body.appendChild(timer);
 
-var goalTime = moment('2112-09-03 00:00:00');
+const goalTime = moment('2112-09-03 00:00:00');
 console.log(goalTime);
 
 const limit = function(){
-    var nowTime = moment();
+    const nowTime = moment();
     const days = goalTime.diff(nowTime,'days');
     const hours = goalTime.diff(nowTime,'hour') % 24; 
     const minutes = goalTime.diff(nowTime,'minute') % 60;

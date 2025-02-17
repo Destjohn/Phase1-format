@@ -1,5 +1,5 @@
-const enemyNum = new Array(3);
-function generateNum(){
+function generaterandomNums(){
+    let enemyNum = new Array(3);
     enemyNum[0] = Math.floor(Math.random() * 10);
     do {
         enemyNum[1] = Math.floor(Math.random() * 10);
@@ -7,9 +7,10 @@ function generateNum(){
     do {
         enemyNum[2] = Math.floor(Math.random() * 10);
     } while ( enemyNum[0] === enemyNum[2] || enemyNum[1] === enemyNum[2] );
+    return enemyNum;
 };
 
-generateNum();
+const enemyNum = generaterandomNums();
 console.log(enemyNum);
 
 const count = document.createElement('p');
